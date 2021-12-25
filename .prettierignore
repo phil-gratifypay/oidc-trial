@@ -2,20 +2,10 @@
 node_modules
 /dist
 
-# Screenshots of test files
-/cypress/screenshots
-/cypress/videos
-
 
 # local env files
 .env.local
 .env.*.local
-
-# config file
-/public/configs.json
-
-# CDK stuffs
-/cdk/cdk.out
 
 # Log files
 npm-debug.log*

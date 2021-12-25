@@ -1,0 +1,102 @@
+// Globals
+$body-font-family: 'Roboto', sans-serif;
+$heading-font-family: 'Manrope', sans-serif;
+$border-radius-root: 8px;
+
+$font-weights: (
+  'regular': normal,
+  'bold': bold,
+);
+
+$grid-breakpoints: (
+  'sm': 960px,
+);
+
+$headings: (
+  'h1': (
+    'size': 48px,
+    'weight': 600,
+    'line-height': 140%,
+  ),
+  'h2': (
+    'size': 40px,
+    'weight': 600,
+    'line-height': 140%,
+  ),
+  'h3': (
+    'size': 34px,
+    'weight': bold,
+    'line-height': 140%,
+  ),
+  'h4': (
+    'size': 28px,
+    'weight': 500,
+    'line-height': 140%,
+  ),
+  'h5': (
+    'size': 24px,
+    'weight': bold,
+    'line-height': 140%,
+  ),
+  'h6': (
+    'size': 20px,
+    'weight': 500,
+    'line-height': 140%,
+    'font-family': $body-font-family,
+  ),
+  'subtitle-1': (
+    'size': 22px,
+    'weight': 300,
+    'line-height': 140%,
+    'letter-spacing': 0.009375em,
+  ),
+  'body-1': (
+    'size': 16px,
+    'weight': normal,
+    'line-height': 140%,
+    'letter-spacing': 0.03125em,
+  ),
+  'body-2': (
+    'size': 20px,
+    'weight': normal,
+    'line-height': 140%,
+  ),
+  'overline': (
+    'size': 14px,
+    'weight': 500,
+    'line-height': 140%,
+    'letter-spacing': 0.02em,
+    'text-transform': uppercase,
+  ),
+  'caption': (
+    'size': 14px,
+    'weight': normal,
+    'line-height': 140%,
+    'letter-spacing': 0.02em,
+  ),
+);
+
+$btn-text-transform: none;
+$btn-sizes: (
+  'default': 44,
+);
+$btn-font-sizes: (
+  'default': 18px,
+);
+
+$text-field-outlined-fieldset-border-width: 2px;
+$checkbox-disabled-opacity: 1;
+
+$card-elevation: 0;
+$card-title-font-size: map-get($headings, 'subtitle-1', 'size');
+$card-title-font-weight: map-get($headings, 'subtitle-1', 'weight');
+$card-title-letter-spacing: map-get($headings, 'subtitle-1', 'letter-spacing');
+$card-title-line-height: map-get($headings, 'subtitle-1', 'line-height');
+$card-text-font-size: map-get($headings, 'body-1', 'size');
+$card-text-font-weight: map-get($headings, 'body-1', 'weight');
+$card-text-letter-spacing: map-get($headings, 'body-1', 'letter-spacing');
+$card-text-line-height: map-get($headings, 'body-1', 'line-height');
+
+$window-transition: none;
+
+$btn-toggle-border-radius: 8px 8px 0px 0px;

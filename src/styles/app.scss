@@ -1,0 +1,374 @@
+// Add custom styles here
+@import url("https://fonts.googleapis.com/css?family=Manrope&display=swap");
+
+.actions {
+  cursor: pointer;
+}
+
+.fill-currentColor {
+  fill: currentColor;
+}
+
+@media #{map-get($display-breakpoints, 'xs-only')} {
+  .v-application {
+    .text-h1 {
+      font-size: 40px !important;
+    }
+    .text-h2 {
+      font-size: 34px !important;
+    }
+    .text-h3 {
+      font-size: 30px !important;
+    }
+    .text-h4 {
+      font-size: 26px !important;
+    }
+    .text-h5 {
+      font-size: 22px !important;
+    }
+    .text-h6 {
+      font-size: 18px !important;
+    }
+    .text-subtitle-1 {
+      font-size: 20px !important;
+    }
+  }
+}
+
+.theme--light.v-application {
+  color: var(--v-slate-base);
+}
+
+// @media #{map-get($display-breakpoints, 'xs-only')} {
+//   .theme--light.v-application {
+//     background-color: #e5e5e5;
+//   }
+// }
+
+.v-tab {
+  text-transform: unset !important;
+}
+
+.v-card__text,
+.v-card__title {
+  word-break: normal !important;
+}
+
+.v-btn:hover {
+  box-shadow: none;
+}
+
+.v-sheet.v-app-bar.v-toolbar:not(.v-sheet--outlined) {
+  background-color: #ffffff !important;
+  box-shadow: 0px 4px 8px rgba(60, 66, 87, 0.04) !important;
+}
+
+@mixin v-btn {
+  box-shadow: 0px -1px 1px rgba(60, 66, 87, 0.12),
+    0px 2px 5px rgba(60, 66, 87, 0.12), 0px 1px 1px rgba(60, 66, 87, 0.08);
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  font-feature-settings: "tnum" on, "lnum" on;
+}
+
+.v-btn.gratify-blue {
+  @include v-btn();
+  // width: 298px;
+  background-color: var(--v-primary-base);
+  color: #ffffff !important;
+}
+
+.v-btn.gratify-blue:hover {
+  background-color: #5040d2;
+  // border-color: #5040d2;
+}
+
+.v-btn.ultra-red {
+  @include v-btn();
+  // width: 298px;
+  background-color: var(--v-ultra-red-base);
+  color: var(--v-primary-base) !important;
+}
+
+.v-btn.ultra-red:hover {
+  background-color: #fc8f9b;
+  // border-color: #fc8f9b;
+}
+
+.v-btn.ice {
+  @include v-btn();
+  // width: 192px;
+  background-color: var(--v-ice-base);
+  color: var(--v-gratify-blue-base) !important;
+}
+
+.v-btn.blue-10 {
+  @include v-btn();
+  // width: 192px;
+  background-color: var(--v-blue-10-base);
+  color: var(--v-gratify-blue-base) !important;
+}
+
+.dashboard-body {
+  max-width: 1190px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media #{map-get($display-breakpoints, 'xs-only')} {
+  .dashboard-body {
+    padding: 24px;
+  }
+}
+
+.glass {
+  // background: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0px 17.5609px 16.2101px rgba(11, 39, 40, 0.07);
+  backdrop-filter: blur(20px);
+  border-radius: 8px;
+}
+
+.v-window {
+  margin-bottom: 20px;
+}
+
+.card {
+  border-radius: 4px;
+  padding: 24px 30px 24px 30px;
+  background-color: var(--v-ice-base);
+  // margin-bottom: 10px;
+}
+
+@media #{map-get($display-breakpoints, 'xs-only')} {
+  .card {
+    padding: 12px;
+    background-color: unset;
+  }
+
+  .card > .row > * {
+    background-color: var(--v-ice-base);
+  }
+
+  .card-with-spaces > .row > * {
+    margin-bottom: 20px;
+  }
+}
+
+@media #{map-get($display-breakpoints, 'xs-only')} {
+  .card-header {
+    color: var(--v-blue-75-base);
+    background-color: var(--v-ice-base);
+    border-radius: 8px 8px 0px 0px;
+    margin: 0;
+    padding: 8px !important;
+  }
+}
+
+.card-section-title {
+  padding-bottom: 8px;
+  margin-bottom: 4px;
+}
+
+.card-section-underline {
+  border-bottom: 1px solid black;
+}
+
+@media #{map-get($display-breakpoints, 'xs-only')} {
+  .card-section-title {
+  }
+}
+
+.card-2 {
+  background: rgba(255, 255, 255, 0.9) !important;
+  backdrop-filter: blur(15px) !important;
+  box-shadow: 0px 0px 40px rgba(60, 66, 87, 0.05),
+    0px 10px 40px rgba(60, 66, 87, 0.05) !important;
+}
+
+.card-3 {
+  @extend .card-2;
+  border-radius: 4px !important;
+}
+
+.wallet .wallet-card:not(:first-child) {
+  margin-left: 20px;
+}
+
+.wallet .wallet-card {
+  width: 345px;
+  height: 172px;
+  float: left;
+}
+
+@media screen and (max-width: 780px) {
+  // magic width that allows two side by side cards
+  .wallet {
+    position: relative;
+  }
+
+  .wallet .wallet-card {
+    position: absolute;
+    margin-left: 0 !important;
+    background-color: var(--v-slate-10-base) !important;
+    width: 100%;
+  }
+
+  .wallet .wallet-card:last-child {
+    background-color: white !important;
+  }
+
+  @for $i from 0 through 5 {
+    .wallet .wallet-card:nth-child(#{$i + 1}) {
+      top: unquote(($i * 60) + "px");
+    }
+  }
+}
+
+.opacity-50 {
+  opacity: 0.5;
+}
+
+.gp-payment-forms > .label {
+  margin-bottom: 8px;
+  margin-left: 2px;
+  color: var(--v-slate-50-base);
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.005em;
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+
+.gp-payment-forms > .v-input > .v-input__control > .v-input__slot {
+  border: 1px solid #ced0d5;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 5px rgba(60, 66, 87, 0.08),
+    0px 1px 1px rgba(60, 66, 87, 0.04) !important;
+  border-radius: 8px;
+}
+
+.v-input--is-disabled.v-input--checkbox
+  > .v-input__control
+  > .v-input__slot
+  > .v-input--selection-controls__input
+  > .v-icon {
+  color: var(--v-blue-25-base) !important;
+}
+
+.v-input--indeterminate.v-input--checkbox
+  > .v-input__control
+  > .v-input__slot
+  > .v-input--selection-controls__input
+  > .v-icon {
+  color: var(--v-blue-75-base) !important;
+}
+
+.v-input--indeterminate.v-input--is-disabled.v-input--checkbox
+  > .v-input__control
+  > .v-input__slot
+  > .v-input--selection-controls__input
+  > .v-icon {
+  color: var(--v-blue-25-base) !important;
+}
+
+.v-radio.v-radio--is-disabled
+  > .v-input--selection-controls__input
+  > .mdi-radiobox-blank {
+  color: var(--v-slate-25-base) !important;
+}
+
+// .v-radio.v-radio--is-disabled > .v-label {
+//   color: orange !important;
+// }
+
+.mdi-radiobox-blank {
+  color: var(--v-slate-75-base) !important;
+}
+
+.v-radio.v-radio--is-disabled.gp-radio--active
+  > .v-input--selection-controls__input
+  > .mdi-radiobox-marked {
+  color: var(--v-blue-25-base) !important;
+}
+
+// .v-radio.v-radio--is-disabled.gp-radio--active > .v-label {
+//   color: green !important;
+// }
+
+.min-height-60 {
+  min-height: 60px;
+}
+
+.min-width-50vw {
+  width: 50vw;
+  min-width: 320px;
+}
+
+.nudge-down {
+  margin-top: 2px;
+}
+
+.nudge-up {
+  margin-bottom: 2px;
+}
+
+.inner-tab.v-tab {
+  border-top: 2px solid var(--v-ice-base);
+  border-bottom: 2px solid var(--v-ice-base);
+  font-size: map-deep-get($headings, "body-1", "size");
+  letter-spacing: map-deep-get($headings, "body-1", "letter-spacing");
+  color: var(--v-slate-50-base) !important;
+  font-weight: 500;
+
+  &.v-tab--active {
+    color: var(--v-blue-75-base) !important;
+    background-color: var(--v-ice-base);
+  }
+
+  &:first-of-type {
+    border-left: 2px solid var(--v-ice-base);
+    border-radius: 8px 0px 0px 0px;
+  }
+
+  &:last-of-type {
+    border-right: 2px solid var(--v-ice-base);
+    border-radius: 0px 8px 0px 0px;
+  }
+
+  @media #{map-get($display-breakpoints, 'sm-and-up')} {
+    min-width: 164px;
+  }
+}
+
+.outer-tab.v-tab {
+  font-size: map-deep-get($headings, "body-1", "size");
+  letter-spacing: map-deep-get($headings, "body-1", "letter-spacing");
+  color: var(--v-slate-50-base) !important;
+  background-color: var(--v-ice-base);
+  font-weight: 500;
+
+  .v-icon {
+    color: var(--v-blue-75-base);
+  }
+
+  &.v-tab--active {
+    color: white !important;
+    background-color: var(--v-blue-50-base);
+  }
+
+  &:first-of-type {
+    border-radius: 8px 0px 0px 0px;
+  }
+
+  &:last-of-type {
+    border-radius: 0px 8px 0px 0px;
+  }
+
+  @media #{map-get($display-breakpoints, 'sm-and-up')} {
+    min-width: 164px;
+  }
+}
